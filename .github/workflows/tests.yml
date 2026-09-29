@@ -1,0 +1,16 @@
+name: Tests automatiques
+
+on: [push]
+
+jobs:
+  tester:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code du dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer pytest
+        run: pip install pytest
+
+      - name: Lancer les tests
+        run: pytest
