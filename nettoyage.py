@@ -1,2 +1,2 @@
 def supprimer_valeurs_negatives(liste):
-    return [x for x in liste if x >= 0]
+    return [x for x in liste if x < 0]
